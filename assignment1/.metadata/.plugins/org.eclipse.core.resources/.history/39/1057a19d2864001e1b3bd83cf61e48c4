@@ -1,0 +1,22 @@
+package numberConvert;
+import java.util.*;
+
+public class numberCovert {
+
+	public static void main(String[] args) {
+		
+		 int x;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number = ");
+		x=sc.nextInt();
+		String s =Integer.toBinaryString(x);
+		System.out.println("binary is =" + s);
+		
+	     
+		 
+		
+		
+
+	}
+
+}
