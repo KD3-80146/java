@@ -2,6 +2,7 @@ package point.create;
 
 import java.util.Scanner;
 
+
 public class Point2d {
    
 	private int x_axis;
@@ -37,6 +38,24 @@ public class Point2d {
     	  System.out.println("*********************");
     	  
       }
+      
+      boolean isEqual(Point2d point2)
+  	{
+  		if(this.x_axis==point2.x_axis && this.y_axis==point2.y_axis)
+  		{
+  			return true;
+  		}
+  		else
+  		{
+  			return false;
+  		}
+  	}
+  	double calculateDistance(Point2d point2)
+  	{
+  	double result=Math.sqrt(Math.pow((this.x_axis-point2.x_axis),2)+Math.pow((this.y_axis-point2.y_axis),2));
+  	 return result;
+  		
+  	}
 	
 	
 	

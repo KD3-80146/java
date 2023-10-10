@@ -24,6 +24,7 @@ public class Menudriven {
 
 	public static void main(String[] args)
 	{
+		
 		Scanner sc=new Scanner(System.in);
 		int arraySize;
 		System.out.print("Enter the size of Array = ");
@@ -73,8 +74,31 @@ public class Menudriven {
                 }
 				
 				break;
+				
+			case 4:
+				int x,y;
+				System.out.print("Enter The Two Index To Find The Distance ");
+				x=sc.nextInt();
+				y=sc.nextInt();
+				if(x<index && y<index)
+				{
+					  if(point2D[x].isEqual(point2D[y]))
+					  {
+						  System.out.println("Point are equal");
+					  }
+					  else
+					  {
+					double result;
+					result=point2D[x].calculateDistance(point2D[y]);
+					
+					System.out.println("Distance is "+result);
+				}
+					
+				}
+			      break;	
 
 			default:
+				System.out.println("Please Enter The Valid Choice ....):");
 				break;
 			}
 			
