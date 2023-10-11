@@ -65,7 +65,7 @@ public class Fruit {
 		System.out.print("Enter the weight  = ");
 		this.weight=sc.nextDouble();
 		System.out.println("Enter the Fruit is fresh or not (0)for false and (1) for true =");
-		this.isFresh=sc.hasNext();
+		this.isFresh=sc.hasNextBoolean();
 		
 	}
 

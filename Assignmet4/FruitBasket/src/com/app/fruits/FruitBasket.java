@@ -80,7 +80,7 @@ public class FruitBasket {
 				for(int i=0;i<count;i++)
 				{
 					String name=basket[i].getName();
-					System.out.println(name);
+					System.out.println("Name is ="+name);
 				}
 					
 			break;
@@ -101,25 +101,24 @@ public class FruitBasket {
 					{
 					fruit.displayData();
 					String testOfFruit=fruit.taste();
-				    System.out.println(testOfFruit);
+				    System.out.println("Test is "+testOfFruit);
 					}
 					
 				}	
 			break;
 			case 6:
-				for(Fruit fruit:basket)
-				{
-					if(fruit!=null)
+				for(int i=0;i<count;i++)
+					
+					
+					if(basket[i].isFresh()!=true)
 					{
-					if(fruit.isFresh()!=true)
-					{
-						 String testOfFruit=fruit.taste();
-						System.out.println(testOfFruit);
+						 String testOfFruit=basket[i].taste();
+						System.out.println("Test is "+testOfFruit);
 					}
 					
-					}
 					
-				}	
+					
+					
 			break;
 			case 7:
 				
