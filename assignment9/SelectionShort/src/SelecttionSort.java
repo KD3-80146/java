@@ -1,5 +1,5 @@
 import java.util.Comparator;
-class SelectionShort implements Comparator<Double> {
+class SelectionSort implements Comparator<Double> {
 
 	@Override
 	public int compare(Double arg0, Double arg1) {
@@ -33,11 +33,11 @@ static <T> void selectionSort(T[] arr, Comparator<T> c) {
 	public static void main(String[] args) {
 		
 		
-		SelectionShort selectionShort = new SelectionShort();
+		SelectionSort selectionSort = new SelectionSort();
 		
 		
           Double [] arr= {56.3,65.4,41.4,43.4};
-          SelecttionSort.selectionSort(arr,selectionShort);
+          SelecttionSort.selectionSort(arr,selectionSort);
           
           for(Double ele:arr)
           {

@@ -46,7 +46,7 @@ public class CustomerCreditDetail {
 	{
 		if(this.balBeginning>creditLimit)
 		{
-		this.balBeginning+=chargePayed-totalAmmountSpend;
+		this.balBeginning+=-totalAmmountSpend;
 		System.out.println("Remaing Balance"+balBeginning);
 		}
 		else
