@@ -12,6 +12,7 @@ public class TestBook {
 	int menu()
 	{
 		int choice;
+		System.out.println("***********************************");
 		System.out.println("Exit Press 0");
 		System.out.println("1.Add new Book in list");
 		System.out.println("2.Display all books in forward order using random access ");
@@ -19,9 +20,10 @@ public class TestBook {
 		System.out.println("4.Delete a book at given index. ");
 		System.out.println("5.Delete a book with given isbn.");
 		System.out.println("6.Reverse the list");
-		
+		System.out.print("Enter the choice = ");
 		Scanner sc=new Scanner(System.in);
 		choice=sc.nextInt();
+		System.out.println("******************************************");
 		return choice;
 	}
 	public static void main(String[] args) {
@@ -94,11 +96,15 @@ public class TestBook {
 				System.out.println("Enter the International Standard Serial Number = ");
 				 String isbn2=sc.next();
 				 Book b2= new Book();
-				 b2.setIsBN(isbn2);
+				                                                                                 
 				 if(list.contains(b2))
 				 {
 					 int key2=list.indexOf(b2);
 					 list.remove(key2);
+				 }
+				 else
+				 {
+					 System.out.println("International Standard Serial Number  not found ");
 				 }
 				 
 				

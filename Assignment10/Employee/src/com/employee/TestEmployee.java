@@ -15,6 +15,7 @@ public class TestEmployee {
 		List<Employee> link= new LinkedList<Employee>();
 		do {
 		Scanner sc=new Scanner(System.in);
+		System.out.println("*******************************");
 		System.out.println("Press 0 for Exit");
 	    System.out.println("1 Add Employee  ");
 	    System.out.println("2 Delete Employee");
@@ -23,7 +24,7 @@ public class TestEmployee {
 	    System.out.println("5 Edit employee at specific index ");
 	    System.out.print("Enter Choice =");
 	    choice=sc.nextInt();
-		
+	    System.out.println("****************************************");
 	    switch (choice) {
 		case 1:
 			Employee e1=new Employee();
@@ -80,6 +81,7 @@ public class TestEmployee {
 			link.set(index3, newEmp);
 			}
 		default:
+			
 			break;
 		}
 	    
