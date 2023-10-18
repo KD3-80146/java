@@ -1,5 +1,6 @@
 package com.book;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Book {
@@ -65,12 +66,23 @@ public class Book {
 		System.out.println("Author Name is = "+this.authorName);
 		System.out.println("Quantity = "+this.quantity);
 	}
-	
+	@Override
+	public int hashCode() {
+		return Objects.hash(isBN);
+	}
 	@Override
 	public boolean equals(Object obj) {
-		
-		return super.equals(obj);
+		if (this == obj) {
+			return true;
+		}
+		if (!(obj instanceof Book)) {
+			return false;
+		}
+		Book other = (Book) obj;
+		return Objects.equals(isBN, other.isBN);
 	}
+	
+	
 	
      
      
