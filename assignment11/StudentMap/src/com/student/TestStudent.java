@@ -4,7 +4,9 @@ import java.lang.invoke.SwitchPoint;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Scanner;
+import java.util.Set;
 
 public class TestStudent {
 
@@ -31,9 +33,12 @@ public class TestStudent {
 				map.put(student.getRollNo(), student);
 				break;
 			case 2:
-				Collection<Student> value=map.values();
-				System.out.println(value);
-				
+//				Collection<Student> value=map.values();
+//				System.out.println(value);
+				Set<Entry<Integer,Student>> entries = map.entrySet();
+		        for(Entry<Integer,Student> entry : entries) {
+		        	System.out.println(entry.getKey() + " -- " + entry.getValue());
+		        }
 				break;
 				
 			case 3:
