@@ -27,7 +27,7 @@ public class ArrayEqual {
         key=sc.nextDouble();
         
 		int count=countIf(arr, key, (a,b)->a.equals(b));
-		if(count==1)
+		if(count>=1)
 		System.out.println("Element found");
 		else
 		{
