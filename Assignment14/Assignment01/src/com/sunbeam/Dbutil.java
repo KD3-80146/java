@@ -1,10 +1,11 @@
 package com.sunbeam;
 
 import java.sql.Connection;
+
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class Dbutil {
+       class Dbutil {
 	  public static final String DB_DRIVER="com.mysql.cj.jdbc.Driver";
 	  public static final String DB_URL="jdbc:mysql://localhost:3306/TEST";
 	  public static final String DB_USER="KD3_80146_Ujjwal";
